@@ -10,6 +10,7 @@ let nomeSobremesa = "";
 let valorTotal = null;
 let escrito = "";
 
+
 //let numero = prompt("Qual o seu número do whatsaap? (Não coloque o 0 na frente do DDD; ex: 48123451234");
 //let nome = promp("Qual o seu nome?");
 
@@ -91,6 +92,8 @@ if((preçoComida !== null) && (preçoBebida !== null) && (preçoSobremesa !== nu
 }
 function escolher (){
     if((preçoComida !== null) && (preçoBebida !== null) && (preçoSobremesa !== null)) {
+        const nome = prompt("Qual o seu nome?");
+        const endereço = prompt("Qual o seu endereço?");
 
         valorTotal = preçoComida + preçoBebida + preçoSobremesa;
 
@@ -122,45 +125,16 @@ function escolher (){
 
 }
 
+function prosseguir() {
+    
+    const descricao = 'Olá, meu nome é ${nome} e gostaria de fazer o pedido:\n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: R$ ${valorTotal}, para ser entregue no endereço: ${endereço}';
 
+    
+    const url = `https://wa.me/5565996508397?text=${encodeURIComponent(descricao)}`;
+    window.open(url);
+}
 
-
-
-
-
-
-
-
-      //window.open('https://wa.me/5565996508397'); //change this to show a window with payment informat}
-
-{/* <li class="carta" onClick="virarCarta(this)">
-<div class='front-face face'>
-    <img src='imagens/front.png'>
-</div>
-<div class='back-face face'>
-    <img src='imagens/${baralho[i]}.gif'>
-</div>
-</li>
-`; */}
-
-{/* <div class="confirmaçao-final escondido">
-       
-       Confirme o seu pedido
-      
-      <div>
-       <span>$(nomeComida)</span>
-       <span>$(preçoComida)</span>
-
-      </div>
-      <div>
-       <span>$(nomeBebida)</span>
-       <span>$(preçoBebida)</span>
-      </div>
-      <div>
-       <span>$(nomeSobremesa)</span>
-       <span>$(preçoSobremesa)</span>
-      </div>
-      <button>prosseguir</button>
-      <button>cancelar</button>
-
-  </div> */}
+function cancelar (){
+    document.querySelector(".tudo").classList.remove("escondido");
+    document.querySelector(".confirmaçao-final").classList.add("escondido");
+}
