@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #e5e5e5;
+    z-index: 1;
+
+}
+
+.ctrn-conteudo {
+    margin= 100px 0 100px 0;
+    
+}
+
+p{
+    font-family: Righteous;
+    font-weight: 400;
+    font-size: 28px;
+    color: #333333;
+  
+}
+.topo-logo {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 25px;
+    background-color: #CF2B2B;
+    width: 100%;
+    height: 92px;
+    padding: 20px;
+}
+
+.topo-logo > h1 {
+    font-family: Righteous;
+    font-weight: 400;
+    font-size: 44px;
+    color: #ffffff;
+
+}
+
+.topo-logo > h2 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+.aviso-opçoes {
+    font-family: Righteous;
+    font-weight: 400;
+    font-size: 28px;
+    color: #333333;
+    padding: 20px;
+  
+}
+
+.opçoes:first-child{
+    margin-top: 100px;
+    
+}
+.final {
+    padding-bottom: 160px;
+    
+}
+
+
+.rolamento-opçoes {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    
+}
+.rolamento-opçoes .selecionado-comida {
+    border: 3px solid #32B72F;
+    
+}
+
+.rolamento-opçoes .selecionado-bebida {
+    border: 3px solid #32B72F;
+    
+}
+
+.rolamento-opçoes .selecionado-sobremesa {
+    border: 3px solid #32B72F;
+    
+}
+
+.opçao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+    width: 172px;
+    height: 216px;
+    
+    margin: 20px;
+    border-radius: 9px;
+    
+    background-color: #ffffff;
+}
+
+
+
+.opçao img {
+    width: 140px;
+    height: 87px;
+    align-items: center;
+}
+
+.opçao > p3 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
+
+.opçao > p4 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    color: #a6a6a6;
+}
+
+.opçao > h6 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+
+
+.ctrn-confirmaçao {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 18px;
+    height: 92px;
+}
+.ctrn-confirmaçao > button {
+    background-color: #cbcbcb;
+    height: 61px;
+    width: 364px;
+    border-radius: 50px;
+    border: 1px solid black;
+
+}
+
+.ctrn-confirmaçao  button > h5 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    
+    
+
+}
+
+
+.ctrn-confirmaçao  button.selecionado-tudo {
+    background-color: #32B72F;
+    color: #ffffff;
+}
+.finalizar {
+    display: flex;
+    flex-direction: column;
+    background-color: #32B72F;
+    justify-content: space-between;
+    border-radius: 9px;
+    z-index: 3;
+    position:fixed;
+    align-items: center;
+
+}
+finalizar div > h1 {
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.confirme {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirme > span {
+    margin: 0 10px;
+}
+.escondido {
+    display: none;
+}
+
